@@ -80,9 +80,6 @@
             <label class="control-label" for="nomEtape">Nom de l'étape</label>
             <i>(Champs obligatoire)</i>
                 <input id="nomEtape" type="login" class="form-control" required name="nomEtape" ng-model="nomEtape" ng-minlength="1"/>
-            <span class="text-danger" ng-show="registerForm.nomEtape.$error.minlength">
-                    Le champs est obligatoire
-                </span>
         </div>
  <!-- Type de l'étape -->
       <div class="form-group">
@@ -123,7 +120,7 @@
 
         <div class="form-group">
             <div class="col-sm-offset-3 col-sm-5">
-               <center> <input type="submit" class="btn btn-default" value="Créer compte" ng-disabled="registerForm.$invalid" /></center>
+               <center> <input type="submit" class="btn btn-default" value="Créer l'étape" ng-disabled="registerForm.$invalid" /></center>
             </div>
         </div>
 
