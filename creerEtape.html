@@ -74,7 +74,7 @@
     <h1><center> Création de l'étape </center></h1>
     <br><br>
    <div ng-app="sample">
-    <form class="form-horizontal" name="registerForm">
+    <form action="inc/insertEtape.php" class="form-horizontal" name="registerForm">
 
         <div class="form-group" ng-class="{'has-error': registerForm.$dirty && registerForm.nomEtape.$invalid, 'has-success': registerForm.nomEtape.$valid}">
             <label class="control-label" for="nomEtape">Nom de l'étape</label>
