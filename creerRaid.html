@@ -8,7 +8,6 @@
    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,700' rel='stylesheet'type='css'>
    <link rel="stylesheet" href="css/bootstrap.css">
    <link rel="stylesheet" href="css/jquery-ui.css">
-   <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
 
    
 <style type="text/css">
@@ -43,6 +42,7 @@
                <ul class="dropdown-menu" role="menu">
                   <li><a href="creerRaid.html">Raid</a></li>
                   <li><a href="creerEtape.html">Etape</a></li>
+                  <li><a href="creerCarte.html">Carte</a></li>
                </ul>
             </li>
             </li>
@@ -74,7 +74,7 @@
     <h1><center> Création du raid </center></h1>
     <br><br>
    <div ng-app="sample">
-    <form class="form-horizontal" name="registerForm">
+    <form action="inc/insertRaid.php" class="form-horizontal" name="registerForm" method="post">
 
         <div class="form-group" ng-class="{'has-error': registerForm.$dirty && registerForm.nomRaid.$invalid, 'has-success': registerForm.nomRaid.$valid}">
             <label class="control-label" for="nomRaid">Nom du raid</label>
@@ -95,7 +95,7 @@
       <!-- Date de fin de l'étape -->
       <div class="form-group">
          <label for="">Date de fin du raid</label>
-         <input type="text" id="dateFinEtape" class="datepicker" name="dateFinEtape" placeholder="Date fin">
+         <input type="text" id="dateFinRaid" class="datepicker" name="dateFinRaid" placeholder="Date fin">
       </div>
       <!-- Lieu étape -->
       <div class="form-group">
@@ -123,17 +123,8 @@
 <script type="text/javascript" src="js/jquery-ui.js"></script>
 <script type="text/javascript" src="js/angular/angular.js"></script>
 <script type="text/javascript" src="js/creationCompte.js"></script>
-<script src="js/jquery.datetimepicker.js"></script>
 <script type="text/javascript" src="js/date.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script>
-   $('#datetimepicker1,#datetimepicker2').datetimepicker({
-    datepicker:false,
-    format:'H:i',
-    step:5
-   });
-</script>
-
 
 
          
