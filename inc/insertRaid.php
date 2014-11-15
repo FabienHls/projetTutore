@@ -13,7 +13,7 @@ $lieuArrivee = $_POST['lieuArrivee'];
   $sql = "INSERT INTO Raid (nomRaid, typeRaid, dateDebutRaid, dateFinRaid, lieuDepart, lieuArrivee) VALUES ('$nomRaid', '$typeRaid', '$dateDebutRaid', '$dateFinRaid', '$lieuDepart', '$lieuArrivee')";
  
   //exécution de la requête SQL:
-  $requete = mysql_query($sql, $connexion) or die( mysql_error() ) ;
+  $requete = mysqli_query($db, $sql) or die( mysql_error() ) ;
  
   //affichage des résultats, pour savoir si l'insertion a marché:
   if($requete)
@@ -25,6 +25,6 @@ $lieuArrivee = $_POST['lieuArrivee'];
     echo("L'insertion à échouée") ;
   }
 
-mysql_close();
+mysqli_close();
 
 ?>
