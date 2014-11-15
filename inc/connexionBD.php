@@ -1,5 +1,8 @@
 <?php
 $db=mysqli_connect('localhost','root','root','raidSportif');
+if (!$db) {
+    die('Erreur de connexion : ' . mysqli_connect_error());
+}
 
 //$serveur = "localhost";
 //$nom_base = "raidSportif";
