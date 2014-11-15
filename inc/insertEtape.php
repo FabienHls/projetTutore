@@ -16,7 +16,7 @@ $lieuArrivee = $_POST['lieuArrivee'];
   $sql = "INSERT INTO Etape (nomEtape, typeEtape, dateDebutEtape, dateFinEtape, heureDepart, heureFin, lieuDepart, lieuArrivee) VALUES ('$nomEtape', '$typeEtape', '$dateDebutEtape', '$dateFinEtape', '$heureFin', '$heureDepart', '$lieuDepart', '$lieuArrivee')";
  
   //exécution de la requête SQL:
-  $requete = mysql_query($db, $sql) or die( mysql_error() ) ;
+  $requete = mysql_query($db, $sql) or die( mysqli_error() ) ;
  
   //affichage des résultats, pour savoir si l'insertion a marché:
   if($requete)
