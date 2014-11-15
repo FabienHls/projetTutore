@@ -1,5 +1,5 @@
 <?php
-    // session_start inutile ici
+    // session_start est inutile ici
 
     // Vérification de l'autorisation
     if (!@$_SESSION["login"]) {
