@@ -1,5 +1,5 @@
 <?php
-include('connexionBd.php');
+include('connexionBD.php');
 @session_start(); //le @ pour éviter d'afficher l'erreur comme quoi la sessionn existe déjà si il y a un problème de déconnexion
 
 if (isset ($_POST['username']) && isset($_POST['pass'])){

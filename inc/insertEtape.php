@@ -12,6 +12,7 @@ $lieuDepart = $_POST['lieuDepart'];
 $lieuArrivee = $_POST['lieuArrivee'];
 
 
+
  //création de la requête SQL:
   $sql = "INSERT INTO Etape (nomEtape, typeEtape, dateDebutEtape, dateFinEtape, heureDepart, heureFin, lieuDepart, lieuArrivee) VALUES ('$nomEtape', '$typeEtape', '$dateDebutEtape', '$dateFinEtape', '$heureFin', '$heureDepart', '$lieuDepart', '$lieuArrivee')";
  
