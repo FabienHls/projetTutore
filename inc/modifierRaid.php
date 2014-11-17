@@ -8,7 +8,7 @@ if (isset($_GET['nomEtape'])) {
 	$sql ="SELECT * FROM Etape WHERE nomEtape= '%s'";
 	$query=sprintf($sql, $data);
 	echo $query;
-	$results = mysqli_query($db,$sql);
+	$results = mysqli_query($db,$query);
 	$nbResults=mysqli_num_rows($result); // Nombre de résultats
 	$row=mysqli_fetch_assoc($result);
 }
