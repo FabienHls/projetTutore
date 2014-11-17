@@ -11,7 +11,7 @@ if (isset($_GET['nomEtape'])) {
 	echo $sql;
 	$results = mysqli_query($db,$sql);
 	$nbResults=mysqli_num_rows($results); // Nombre de résultats
-	$row=mysqli_fetch_assoc($results);
+	$rows=mysqli_fetch_assoc($results);
 
 	// If there are no records.
 	if($nbResults==0) {  // Si 0 resultat
