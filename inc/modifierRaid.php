@@ -5,8 +5,7 @@ include 'connexionBD.php';
 if (isset($_GET['nomEtape'])) {
 	// Create the query
 	$data = $_GET['nomEtape'];
-	echo $data;
-	$sql = 'SELECT * FROM Etape WHERE nomEtape='.$data;
+	$sql = "SELECT * FROM Etape WHERE nomEtape=".$data;
 	echo $sql;
 	$results = mysqli_query($db,$sql);
 	$nbResults=mysqli_num_rows($result); // Nombre de résultats
