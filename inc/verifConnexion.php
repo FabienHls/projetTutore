@@ -16,7 +16,6 @@ if (isset ($_POST['username']) && isset($_POST['pass'])){
 
 	
 	$fixedlogin=mysqli_real_escape_string($db,$login); //enleve les ' dans le login
-	// $fixedmdp=mysqli_real_escape_string($db,$mdp);	  //idem pour le mdp
 	
 	$query=sprintf($sql, $fixedlogin);//concatenne le tout
 
